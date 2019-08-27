@@ -1,0 +1,109 @@
+html {
+	height: 100%;
+}
+body {
+    background-color: red;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+    margin: 0;
+}
+
+.wrapper {
+    width: 9cm;
+    height: 5cm;
+    position: absolute;
+	box-shadow: 6px 8px 10px 0px rgba(0,0,0,0.5);
+	transform: rotateZ(35deg) rotateX(55deg) rotateY(-25deg);
+	transition: .6s;
+}
+
+p {
+	color: #333;
+	transform: translate(-10px, -10px);
+	text-shadow: 1px 1px #000, 2px 2px #555, 3px 3px #555, 4px 4px #555, 5px 5px #555, 6px 6px #555, 7px 7px #555;
+	transition: .6s;
+}
+
+#one:hover {
+	margin-top: -50px;
+	transform: none;
+	cursor: pointer;
+	box-shadow: 0px 140px 75px -80px rgba(0,0,0,1);
+	text-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+}
+
+#one:hover p {
+	transform: none;
+	text-shadow: none;
+}
+
+.cardbox {
+    width: 9cm;
+    height: 5cm;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #fff;
+    border: solid 1px #555;
+}
+
+.name {
+    font-size: 20pt;
+    font-family: "Julius Sans One", sans-serif;
+    text-align: center;
+    margin-top: 10mm;
+    margin-bottom: 2mm;
+}
+
+.job {
+    font-size: 12pt;
+    font-family: "Archivo Narrow", sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.1;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 0mm;
+    margin-bottom: 3mm;
+}
+
+.contact {
+    font-size: 9pt;
+    font-family: "Source Sans Pro", sans-serif;
+    text-align: right;
+    margin-top: 0;
+    padding: 0px 30px 0px 0px;
+}
+
+a:visited {
+    color: rgba(0,0,0,0.6);
+}
+a:link {
+    color: rgba(0,0,0,0.6);
+}
+a {
+    text-decoration: none;
+}
+
+#one {
+	z-index: 5;	
+}
+
+#two {
+	margin-top: 5px;
+	z-index: 4;
+}
+#three {
+	margin-top: 10px;
+	z-index: 3;
+}
+#four{
+	margin-top: 15px;
+	z-index: 2;
+}
+#five {
+	margin-top: 20px;
+	z-index: 1;
+}
